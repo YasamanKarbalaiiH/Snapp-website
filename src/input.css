@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@font-face {
+  font-family: "iransans";
+  src: url("../fonts/IranianSans.ttf") format("truetype");
+}
+@theme {
+  --font-iransans: "iransans";
+}
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 840px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+@theme {
+  --color-green-snap: #21aa58;
+  --color-text-nav: #414141;
+  --color-bg-gray: #f2f5f8;
+  --color-text-bg: #404040;
+  --color-text-muted: #eee;
+  --color-bg-muted: rgba(255, 255, 255, 0.05);
+  --color-bg-navres: rgba(0, 0, 0, 0.5);
+  --color-bg-dark1: #242424;
+  --color-bg-dark2: #000;
+}
+@theme {
+  --text-clamp: "clamp(0.7rem,1vw,1rem)";
+  --text-clampintro: "clamp(1.5rem,2vw,2rem)";
+  --text-clampdes: "clamp(1rem,1.2vw,2rem)";
+  --text-clampsuperdes: "clamp(0.9rem,1vw,2rem)";
+}
